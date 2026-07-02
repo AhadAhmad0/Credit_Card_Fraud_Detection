@@ -1,46 +1,29 @@
-# Credit_Card_Fraud_Detection
+# 💳 Credit Card Fraud Detection
 
-📌 Project Overview:
-This project focuses on detecting fraudulent credit card transactions using Machine Learning techniques. The notebook Credit_Card_Fraud_Detection.ipynb demonstrates the complete end-to-end workflow of a fraud detection system, including data preprocessing, exploratory data analysis (EDA), model building, evaluation, and performance comparison.
+A machine learning project that detects fraudulent credit card transactions using **Logistic Regression**. Since fraud cases are extremely rare compared to legitimate transactions, the dataset is highly imbalanced. To address this, the project creates a balanced dataset by randomly undersampling legitimate transactions before training the model. The trained classifier predicts whether a transaction is genuine or fraudulent, providing a simple yet effective baseline for fraud detection.
 
-Credit card fraud detection is a highly imbalanced classification problem where fraudulent transactions represent a very small percentage of the dataset. This project applies appropriate techniques to handle class imbalance and improve prediction accuracy.
+## 🧠 How It Works
 
-📊 Project Workflow:
-1️⃣ Data Loading & Exploration:
-1.Importing necessary Python libraries
-2.Loading the dataset
-2.Understanding features, target variable, and data distribution
-4.Checking for missing values
+The model follows a straightforward machine learning pipeline:
 
-2️⃣ Data Preprocessing:
-1.Feature scaling (if required)
-2.Handling class imbalance (e.g., undersampling/oversampling techniques like SMOTE)
-3.Splitting dataset into training and testing sets
+1. **Data Loading & Exploration** — loads the transaction dataset and analyzes its structure and class distribution.
+2. **Data Balancing** — performs random undersampling to create an equal number of legitimate and fraudulent transactions.
+3. **Train-Test Split** — divides the balanced dataset into training and testing sets.
+4. **Logistic Regression** — trains a binary classification model to distinguish fraudulent transactions.
+5. **Model Evaluation** — measures performance using accuracy on both training and test datasets.
 
-3️⃣ Model Building:
-The notebook applies machine learning classification algorithms such as:
-1.Logistic Regression
-2.Decision Tree
-3.Random Forest
-Other ensemble or advanced models (if included)
+## 🛠️ Tech Stack
 
-4️⃣ Model Evaluation:
-1.Accuracy Score
-2.Precision, Recall, F1-Score
-3.Confusion Matrix
+Python · Pandas · NumPy · Scikit-learn · Jupyter Notebook
 
-📦 Required Libraries:
-1.numpy
-2.pandas
-3.matplotlib
-4.seaborn
-5.scikit-learn
-6.imbalanced-learn (for handling imbalanced datasets)
-7.joblib (optional, for saving models)
-8.ROC-AUC Score
+## 🚧 Known Limitations
 
-Performance comparison helps identify the most effective model for fraud detection.
+* Random undersampling discards a large portion of legitimate transaction data.
+* Accuracy alone is insufficient for evaluating fraud detection due to class imbalance.
+* Future improvements include using SMOTE, ensemble models, and precision-recall metrics for more reliable performance.
 
-🎯 Conclusion:
+## 👤 Author
 
-This project demonstrates practical implementation of machine learning for financial fraud detection. It highlights the importance of handling imbalanced datasets and selecting appropriate evaluation metrics to build reliable fraud detection systems.
+**Ahad Ahmad**
+
+* GitHub: **@AhadAhmad0**
