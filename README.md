@@ -26,4 +26,5 @@ Python · Pandas · NumPy · Scikit-learn · Jupyter Notebook
 
 **Ahad Ahmad**
 
-* GitHub: **@AhadAhmad0**
+- GitHub: [https://github.com/AhadAhmad0](url)
+
