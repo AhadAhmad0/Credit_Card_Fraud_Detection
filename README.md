@@ -1,30 +1,53 @@
 # 💳 Credit Card Fraud Detection
 
-A machine learning project that detects fraudulent credit card transactions using **Logistic Regression**. Since fraud cases are extremely rare compared to legitimate transactions, the dataset is highly imbalanced. To address this, the project creates a balanced dataset by randomly undersampling legitimate transactions before training the model. The trained classifier predicts whether a transaction is genuine or fraudulent, providing a simple yet effective baseline for fraud detection.
+A machine learning-based credit card fraud detection system that classifies transactions as legitimate or fraudulent using transaction features. The project demonstrates the complete ML workflow, from data preprocessing and model training to evaluation and prediction.
+
+## 🔴 Project Overview
+
+This project aims to identify fraudulent credit card transactions by analyzing transaction data and learning patterns associated with fraud. The dataset contains **984 transactions** with **30 features**, which were split into **787 training samples** and **197 testing samples**. The trained model achieved **94.28% training accuracy** and **91.88% testing accuracy**, indicating strong performance on unseen data.
 
 ## 🧠 How It Works
 
-The model follows a straightforward machine learning pipeline:
+The fraud detection pipeline follows these steps:
 
-1. **Data Loading & Exploration** — loads the transaction dataset and analyzes its structure and class distribution.
-2. **Data Balancing** — performs random undersampling to create an equal number of legitimate and fraudulent transactions.
-3. **Train-Test Split** — divides the balanced dataset into training and testing sets.
-4. **Logistic Regression** — trains a binary classification model to distinguish fraudulent transactions.
-5. **Model Evaluation** — measures performance using accuracy on both training and test datasets.
+1. **Data Preprocessing** – Cleaning the dataset and handling missing values.
+2. **Feature Engineering** – Preparing transaction features for model training.
+3. **Train-Test Split** – Dividing the dataset into training and testing sets.
+4. **Model Training** – Training a machine learning classifier to detect fraudulent transactions.
+5. **Model Evaluation** – Measuring performance using accuracy on both training and testing datasets.
 
 ## 🛠️ Tech Stack
 
-Python · Pandas · NumPy · Scikit-learn · Jupyter Notebook
+Python · NumPy · Pandas · Scikit-learn · Matplotlib · Seaborn · Jupyter Notebook
 
-## 🚧 Known Limitations
+## 📁 Repository Structure
 
-* Random undersampling discards a large portion of legitimate transaction data.
-* Accuracy alone is insufficient for evaluating fraud detection due to class imbalance.
-* Future improvements include using SMOTE, ensemble models, and precision-recall metrics for more reliable performance.
+```text
+├── notebook/                  # Model training notebook
+├── dataset/                   # Credit card transaction dataset
+├── Credit_Card_Fraud_Detection.ipynb
+├── requirements.txt
+└── README.md
+```
+
+## 📊 Results
+
+- **Dataset Size:** 984 Transactions
+- **Features:** 30
+- **Training Samples:** 787
+- **Testing Samples:** 197
+- **Training Accuracy:** **94.28%**
+- **Testing Accuracy:** **91.88%**
+
+## 🚀 Future Improvements
+
+- Evaluate additional metrics such as Precision, Recall, F1-Score, and ROC-AUC.
+- Address class imbalance using techniques like SMOTE or undersampling.
+- Compare multiple machine learning algorithms and ensemble methods.
+- Deploy the model as an interactive web application using Flask or Streamlit.
 
 ## 👤 Author
 
 **Ahad Ahmad**
 
-- GitHub: [https://github.com/AhadAhmad0](url)
-
+- GitHub: [@AhadAhmad0](https://github.com/AhadAhmad0)
